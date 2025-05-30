@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartAttend - College Attendance System</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i>📊</i> <span>SmartAttend</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#demo">Demo</a>
+                    <a href="#testimonials">Testimonials</a>
+                </div>
+                <div class="auth-buttons">
+                    <button class="btn btn-outlined" onclick="openLoginModal()">Log In</button>
+                    <button class="btn btn-primary">Request Demo</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Automated <span>Attendance Tracking</span> for Modern Colleges</h1>
+                <p>SmartAttend combines facial recognition and geolocation technology to provide a secure, accurate, and efficient attendance management system that eliminates proxy attendance and reduces administrative burden.</p>
+                <button class="btn btn-primary animate-cta">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/500/350" alt="Smart Attendance System" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Features</h2>
+                <p>Our intelligent system combines multiple technologies to ensure accurate attendance tracking while maintaining security and ease of use.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Secure Authentication</h3>
+                    <p>Students and professors log in using their official college credentials with two-factor authentication for enhanced security.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3>Face Recognition</h3>
+                    <p>Advanced facial recognition technology verifies student identity in real-time, preventing proxy attendance issues.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Geolocation Verification</h3>
+                    <p>GPS technology ensures students are physically present within the classroom boundary before marking attendance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Time Tracking</h3>
+                    <p>Comprehensive time logs record check-in/check-out times and total duration present during each class session.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Analytics & Reports</h3>
+                    <p>Generate detailed attendance reports with insights and patterns, exportable in multiple formats.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy & Security</h3>
+                    <p>End-to-end encryption with anti-spoofing measures and compliance with data privacy regulations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Our system provides a seamless experience for both students and faculty.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Initial Setup</h3>
+                    <p>Students register their face once using their webcam or mobile camera through a secure process.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Class Activation</h3>
+                    <p>Professors initiate the class session and the system automatically activates attendance tracking.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Verification Process</h3>
+                    <p>Students are verified using both facial recognition and geolocation to confirm legitimate presence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2>See It In Action</h2>
+                <p>Experience the simplicity and effectiveness of our attendance tracking system.</p>
+            </div>
+            <div class="demo-container">
+                <div class="demo-content">
+                    <h3>Facial Recognition Interface</h3>
+                    <p>Our intelligent system uses your device's camera to verify your identity in seconds. The face recognition technology works with various lighting conditions and can detect attempts at impersonation.</p>
+                    <p>Once verified, your attendance is automatically recorded along with your location data to ensure you're physically present in class.</p>
+                </div>
+                <div class="demo-frame">
+                    <div class="demo-header">
+                        <div class="demo-title">Student Verification</div>
+                        <div class="demo-controls">
+                            <div class="control red"></div>
+                            <div class="control yellow"></div>
+                            <div class="control green"></div>
+                        </div>
+                    </div>
+                    <div class="demo-body">
+                        <div class="camera-view">
+                            <div class="face-outline"></div>
+                            [Camera feed will appear here]
+                        </div>
+                        <div class="status-indicator">
+                            <div class="indicator active"></div>
+                            <span>Face detected</span>
+                        </div>
+                        <div class="status-indicator">
+                            <div class="indicator active"></div>
+                            <span>Location verified (Campus Building 3)</span>
+                        </div>
+                        <div class="status-indicator">
+                            <div class="indicator inactive"></div>
+                            <span>Attendance recording...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Users Say</h2>
+                <p>Hear from colleges that have implemented our smart attendance system.</p>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-image">
+                            <img src="/api/placeholder/60/60" alt="Dr. Sarah Johnson" />
+                        </div>
+                        <div class="testimonial-meta">
+                            <h4>Dr. Sarah Johnson</h4>
+                            <p>Department Head, Tech University</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "SmartAttend has completely transformed how we track attendance. With over 2,000 students, manual attendance was a nightmare. Now, the process is automated, accurate, and our administrative staff can focus on more important tasks."
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-image">
+                            <img src="/api/placeholder/60/60" alt="Professor Michael Chen" />
+                        </div>
+                        <div class="testimonial-meta">
+                            <h4>Professor Michael Chen</h4>
+                            <p>Computer Science Faculty, Eastwood College</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "As someone who teaches large classes, the proxy attendance problem was always a concern. With facial recognition and geolocation verification, we've seen a dramatic improvement in actual class attendance and student performance."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Modernize Your College's Attendance System?</h2>
+            <p>Join hundreds of educational institutions that have streamlined their attendance process with SmartAttend. Request a demo today to see how we can help your college.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-light">Schedule Demo</button>
+                <button class="btn btn-outlined-light">Contact Sales</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>SmartAttend</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Use Cases</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Data Processing</a></li>
+                        <li><a href="#">GDPR Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SmartAttend. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeLoginModal()">&times;</span>
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab(this, 'studentLogin')">Student</div>
+                <div class="tab" onclick="switchTab(this, 'professorLogin')">Professor</div>
+            </div>
+            <div id="studentLogin">
+                <form>
+                    <div class="form-group">
+                        <label for="studentId">College ID</label>
+                        <input type="text" id="studentId" placeholder="Enter your college ID">
+                    </div>
+                    <div class="form-group">
+                        <label for="studentPassword">Password</label>
+                        <input type="password" id="studentPassword" placeholder="Enter your password">
+                    </div>
+                    <button class="btn btn-primary" style="width: 100%;">Login</button>
+                    <div class="form-footer">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </form>
+            </div>
+            <div id="professorLogin" style="display: none;">
+                <form>
+                    <div class="form-group">
+                        <label for="professorId">Faculty ID</label>
+                        <input type="text" id="professorId" placeholder="Enter your faculty ID">
+                    </div>
+                    <div class="form-group">
+                        <label for="professorPassword">Password</label>
+                        <input type="password" id="professorPassword" placeholder="Enter your password">
+                    </div>
+                    <button class="btn btn-primary" style="width: 100%;">Login</button>
+                    <div class="form-footer">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+    <script src="new.js"></script>
+</html>
